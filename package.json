@@ -1,9 +1,11 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "nobox-nopeople",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "Keeps People out except for the ones that should be in",
   "scripts": {
-    "start": "./node_modules/.bin/forever --minUptime=5000 --spinSleepTime=5000 server.js"
+    "start": "./node_modules/.bin/forever --minUptime=5000 --spinSleepTime=5000 server.js",
+    "stop-deamon": "forever stop nopeoplejs",
+    "start-deamon": "forever start --minUptime=5000 --spinSleepTime=5000 --uid \"nopeoplejs\" -a -l logs.txt -o logs-stdout.txt -e logs-stderr.txt server.js"
   },
   "keywords": [
     "OpenShift",
