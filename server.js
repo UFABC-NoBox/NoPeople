@@ -58,10 +58,10 @@ AccessManager.initialize(2050, (obj, next) => {
   // Check if is allowed
   let id = parseInt(obj.cracha)
   let allowed = false
-  let message = 'Ops... Sem acesso =/'
+  let message = 'Sem acesso =/   ID: ' + id
   if(id in app.cachedAccess) {
     allowed = true;
-    message = 'Hey ' + app.cachedAccess[id] + '!';
+    message = 'Bem vindo,      ' + app.cachedAccess[id];
   }
 
   // Log this user

@@ -1,6 +1,6 @@
 {
   "name": "nobox-nopeople",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Keeps People out except for the ones that should be in",
   "scripts": {
     "start": "./node_modules/.bin/forever --minUptime=5000 --spinSleepTime=5000 server.js",
